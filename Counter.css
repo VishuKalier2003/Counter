@@ -1,0 +1,57 @@
+div {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#display {
+    position: absolute;
+    /*Since it is another tag element the positioning will be done with respect to the parent tag*/
+    top: 40px;
+    /*the origin will become the parent tag and not the top left of the page*/
+    left: -10px;
+    background-color: lightblue;
+    height: 60px;
+    padding-left: 40%;
+    padding-top: 30%;
+    width: 100px;
+    font-size: 40px;
+}
+
+section {
+    /*Relative position best works with pixels*/
+    position: relative;
+    top: 320px;
+    display: grid;
+    /*Grid templates to create 3 columns of 100px each*/
+    grid-template-columns: repeat(3, 100px);
+    left: 30%;
+    /*Gap among columns*/
+    column-gap: 16px;
+}
+
+button {
+    font-size: 16px;
+    height: 30px;
+}
+
+button:nth-child(1) {
+    /*Child selectors of the parent, for the children tags*/
+    color: red;
+    border: solid red 4px;
+    background-color: lightpink;
+}
+
+button:nth-child(2) {
+    color: green;
+    border: solid green 4px;
+    background-color: lightgreen;
+}
+
+button:nth-child(3) {
+    color: blue;
+    border: solid blue 4px;
+    background-color: lightblue;
+}
